@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+
+@import 'style/partials/_variables.scss';
+
+@import 'style/partials/base.scss';
+@import 'style/partials/nav.scss';
+@import 'style/partials/form.scss';
+@import 'style/partials/button.scss';
+
+@import 'style/components/playlist.scss';
+@import 'style/components/playlist-button.scss';
+@import 'style/components/search.scss';
+@import 'style/components/search-panel-button.scss';
+@import 'style/components/video.scss';

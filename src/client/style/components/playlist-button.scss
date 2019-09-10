@@ -1,0 +1,30 @@
+
+.playlist-button-wrapper{
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.playlist-button{
+  border-radius: 50%;
+  padding: 15px;
+
+  color: $body-bg;
+  background: $body-text;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  i{
+    font-size: 24px;
+  }
+
+  &.show{
+    visibility: visible;
+  }
+
+  &.hide{
+    visibility: hidden;
+  }
+}
