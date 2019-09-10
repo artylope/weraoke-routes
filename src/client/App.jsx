@@ -83,7 +83,7 @@ class App extends React.Component {
     console.log('currentSong' + this.state.nowPlaying);
     console.log('sessionSongId' + sessionSongId);
 
-    let deleteSongURL = 'http://localhost:3000/api/sessions/' + this.state.sessionId + '/delete';
+    let deleteSongURL = 'http://localhost:3000/api/sessions/' + this.state.sessionId + '/songs/delete';
     fetch(deleteSongURL , {
       method: "delete",
       headers: {
@@ -130,7 +130,7 @@ class App extends React.Component {
 
   handleAddSongToPlaylist(songId){
     console.log('add song ', songId);
-    let addSongURL = 'http://localhost:3000/api/sessions/' + this.state.sessionId + '/new';
+    let addSongURL = 'http://localhost:3000/api/sessions/' + this.state.sessionId + '/songs/new';
     console.log(addSongURL);
 
 
@@ -160,7 +160,7 @@ class App extends React.Component {
     //multiple fetch API
     let allSongsUrl = 'http://localhost:3000/api/songs';
     // let allArtistsUrl = 'http://localhost:3000/artists';
-    let thisSessionSongsUrl = 'http://localhost:3000/api/sessions/' + this.state.sessionId;
+    let thisSessionSongsUrl = 'http://localhost:3000/api/sessions/' + this.state.sessionId + "/songs";
 
 
     Promise.all([
